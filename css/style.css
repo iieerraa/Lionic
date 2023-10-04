@@ -325,25 +325,48 @@ button{
 }
 
 /* contacts */
+.contacts{
+  border-bottom: 1px solid #DADADA;
+}
 .contacts-address{
   font-style: normal;
 }
 .contacts-item{
   flex-direction: column;
-  outline: 1px solid coral;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 29px;
+  padding-top: 48px;
   width: 370px;
 }
 .contacts-item:not(:nth-child(3n)){
   margin-right: 30px;
 }
+.contacts-item-location{
+  background-image: url('../img/location_on.svg');
+}
+.contacts-item-call{
+  background-image: url('../img/phone.svg');
+}
+.contacts-item-mail{
+  background-image: url('../img/mail.svg');
+}
 .contacts-item-caption{
+  color: #1C1C1C;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 180%;
   margin-bottom: 30px;
 }
 .contacts-item-text{
   margin: 0;
+  max-width: 215px;
 }
-.contacts-item-link:not(:last-child){
-  margin-bottom: 5px;
+.contacts-text{
+  color: #787878;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
 }
 
 /* join-us */
@@ -363,6 +386,41 @@ button{
 .footer-logo{
   margin-right: 25px;
 }
+.footer-copy{
+  color: #787878;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer-list{
+  margin-right: 56px;
+}
 .footer-item:not(:last-child){
   margin-right: 28px;
+}
+.footer-link{
+  color: #787878;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: normal;
+}
+.social-link{
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+.item-social:not(:last-child){
+  margin-right: 32px;
+}
+.social-link-twitter{
+  background-image: url(../img/twitter_logo.svg);
+}
+.social-link-linkedin{
+  background-image: url(../img/linkedin_logo.svg);
+}
+.social-link-mail{
+  background-image: url(../img/mail_logo.svg);
 }
